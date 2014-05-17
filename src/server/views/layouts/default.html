@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+  <% include 'includes/header.html' %>
+  <body>
+    <div data-ng-include="'<%= @mean[@mean.appname].view('header.html') %>'"></div>
+    <section>
+      <% content 'main' %>
+    </section>
+    <div data-ng-include="'<%= @mean[@mean.appname].view('footer.html') %>'"></div>
+    <% include 'includes/footer.html' %>
+  </body>
+</html>

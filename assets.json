@@ -1,0 +1,21 @@
+{
+  "js": {
+    "//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js": "public/vendor/angular/angular.js",
+    "public/release/meanstack-project.js": [
+      "public/vendor/angular-meanstack/angular-meanstack.js",
+      "public/vendor/angular-ui-router/release/angular-ui-router.js",
+      "public/js/app.js",
+      "public/js/services/**/*.js",
+      "public/js/controllers/**/*.js",
+      "public/js/filters/**/*.js",
+      "public/js/directives/**/*.js",
+      "public/js/partials.js"
+    ]
+  },
+  "css": {
+    "public/release/meanstack-project.css": [
+      "public/css/**/*"
+    ]
+  },
+  "other": {}
+}
