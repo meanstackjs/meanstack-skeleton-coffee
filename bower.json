@@ -2,7 +2,7 @@
   "name": "meanstack-project",
   "version": "0.0.1",
   "dependencies": {
-    "angular-meanstack": "latest",
+    "angular-meanstack": "0.0.5",
     "angular-ui-router": "#master"
   }
 }

@@ -1,4 +1,4 @@
-app = mean.project mean.appname, [], [
+app = mean.module mean.appname, 'project', [
   'ui.router'
 ]
 
@@ -15,7 +15,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
   ($stateProvider, $urlRouterProvider, $locationProvider) ->
     $stateProvider.state('index',
       url: '/'
-      templateUrl: app.mean.view('index.html')
+      templateUrl: app.mean.resource('views/index.html')
       controller: app.mean.module('IndexController')
     )
     $urlRouterProvider.otherwise('/')
