@@ -1,5 +1,5 @@
-module.exports = (router, route, controllers) ->
-  route.get '/', (req, res) ->
-    controllers.index.hello req, res
+module.exports = ($router, $route, ExampleCtrl) ->
+  $route.get '/', (req, res) ->
+    ExampleCtrl.hello req, res
 
-  router.use '/', route
+  $router.use '/', $route

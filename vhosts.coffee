@@ -1,7 +1,7 @@
-module.exports = (app, appext) ->
+module.exports = ($app, $ext) ->
   [
     callback: (req, res, next) ->
-      app req, res, next
+      $app req, res, next
     hostnames: []
     paths: []
     protocols: []
@@ -13,7 +13,7 @@ module.exports = (app, appext) ->
 Plugins:
 -------------------------------------------------------------------------------
 # Place this in array
-plugin: './plugins/someplugin/app' + appext
+plugin: './plugins/someplugin/app' + $ext
 mount: ['/exampleurl']
 paths: ['/exampleurl']
 install: './plugins/someplugin'
@@ -24,7 +24,7 @@ MEAN Stack Apps:
 exampleapp = require('../somemeanapp')(
   mount: '/exampleurl'
   secret: 'fdasfdsfdasfsa'
-).get('app')
+).get('$app')
 -------------------------------------------------------------------------------
 # Place this in array
 callback: (req, res, next) ->

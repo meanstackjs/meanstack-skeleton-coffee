@@ -1,5 +1,5 @@
-<script type="text/javascript">window.appname = '<%- @mean.appname %>';</script>
-<script type="text/javascript" src="<%= @mean[@mean.appname].assets.js['vendor/angular/angular.js'] %>"></script>
-<% for file in @mean[@mean.appname].assets.js.collection : %>
+<script type="text/javascript">window.meanstack = '<%- @mean.name %>';</script>
+<script type="text/javascript" src="<%= @mean[@mean.name].assets.js['vendor/angular/angular.js'] %>"></script>
+<% for file in @mean[@mean.name].assets.js.collection : %>
   <script type="text/javascript" src="<%= file %>"></script>
 <% end %>

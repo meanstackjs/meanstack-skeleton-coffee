@@ -2,11 +2,12 @@
 <html lang="en">
   <% include 'includes/header.html' %>
   <body>
-    <div data-ng-include="'<%= @mean[@mean.appname].resource('views/header.html') %>'"></div>
+    <div data-ng-include="'<%= @mean[@mean.name].resource('views/header.html') %>'"></div>
     <section>
+      <h1>Hello MEAN Stack app!</h1>
       <% content 'main' %>
     </section>
-    <div data-ng-include="'<%= @mean[@mean.appname].resource('views/footer.html') %>'"></div>
+    <div data-ng-include="'<%= @mean[@mean.name].resource('views/footer.html') %>'"></div>
     <% include 'includes/footer.html' %>
   </body>
 </html>

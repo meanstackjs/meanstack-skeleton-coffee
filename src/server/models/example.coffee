@@ -1,8 +1,9 @@
-module.exports = (mongoose, connection) ->
-  schema = new mongoose.Schema(
-    name:
+module.exports.schema = ($mongoose) ->
+  new $mongoose.Schema(
+    title:
       type: String,
       required: true
   )
 
-  connection.model('example', schema)
+module.exports.model = ($connection, ExampleSchema) ->
+  $connection.model('Example', ExampleSchema)
