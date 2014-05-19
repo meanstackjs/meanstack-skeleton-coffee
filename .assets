@@ -1,0 +1,16 @@
+{
+  "js": {
+    "collection": [
+      "public/release/meanstack-project.c67aa66236.js"
+    ],
+    "vendor/angular/angular.js": "//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"
+  },
+  "css": {
+    "collection": [
+      "public/release/meanstack-project.715387b234.css"
+    ]
+  },
+  "other": {
+    "collection": []
+  }
+}
