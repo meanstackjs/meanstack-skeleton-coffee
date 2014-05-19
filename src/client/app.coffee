@@ -1,12 +1,12 @@
-app = meanstack.module meanstack.name, []
+app = mean.module mean.name, []
 
 # Bootstrap
-meanstack.ready = (app) ->
+mean.ready = (app) ->
   if window.location.hash is '#_=_'
     window.location.hash = '#!'
-meanstack.bootstrap = (app) ->
+mean.bootstrap = (app) ->
   angular.bootstrap document, [app.name]
-meanstack.init app
+mean.init app
 
 # Config
 app.config(() ->)
