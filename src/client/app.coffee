@@ -9,12 +9,9 @@ meanstack.bootstrap = (app) ->
 meanstack.init app
 
 # Config
-app.config(['$urlRouterProvider',
-  ($urlRouterProvider) ->
-    $urlRouterProvider.otherwise('/')
-])
+app.config(() ->)
 
 # Run
-app.run(['$mean', ($mean) ->
+app.run(['$rootScope', '$mean', ($rootScope, $mean) ->
   $rootScope.$mean = $mean # register mean into global scope
 ])
