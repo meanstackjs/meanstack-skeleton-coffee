@@ -1,3 +1,6 @@
 node_modules/
+lib/
+public/
 npm-debug.log
+.assets
 .tmp/

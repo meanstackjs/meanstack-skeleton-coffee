@@ -2,6 +2,6 @@
   "name": "meanstack-project",
   "version": "0.0.1",
   "dependencies": {
-    "angular-meanstack": "0.0.10"
+    "angular": "~1.2.17"
   }
 }
