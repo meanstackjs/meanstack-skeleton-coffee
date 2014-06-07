@@ -16,3 +16,6 @@ exports.server = ($server, $config) ->
   server = http.createServer($server).listen port, ->
     console.log 'Server listening on port ' + port
   return server
+
+exports.config = ($config, $env) ->
+  return
